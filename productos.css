@@ -12,7 +12,7 @@
 }
 
 html{
-    background-color: rgb(240, 191, 225);
+    background-color: rgb(255, 234, 251);
     font-family: 'FuenteMadeAweiler';
     font-size: 18px;
     margin: 0;
@@ -118,6 +118,29 @@ header{
     }
 }
 
+.tituloproductos{
+    display: grid;
+    place-items: center;
+}
+
+.tituloproductos .hdos{
+    margin-top: 25px;
+}
+
+.tituloproductos .segundohdos{
+    margin-top: -15px;
+}
+
+.tituloproductos h2{
+    font-size: 40px;
+}
+
+.tituloproductos h4{
+    margin-top: -10px;
+    color: rgb(194, 62, 83);
+    font-size: 25px;
+}
+
 .cards{
     display: flex;
     flex-direction: row;
@@ -149,6 +172,6 @@ header{
 
 
 footer{
-    background-color: aquamarine;
+    background-color: rgb(43, 43,43);
 }
 
