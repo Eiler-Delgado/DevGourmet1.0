@@ -14,33 +14,35 @@
 html{
     background-color: rgb(255, 234, 251);
     font-family: 'FuenteMadeAweiler';
-    font-size: 18px;
+    font-size: 1.125rem;
     margin: 0;
 }
 
 body{
-    margin: 0px;
+    margin: 0rem;
 }
 
 img{
     width: 100%;
 }
 
+/* de aca para abajo comienza la barra de navegación  */
+
 header{
     display: flex;
     background-color: white;
     justify-content: space-around;
     align-items: center;
-    min-height: 60px;
+    min-height: 3.75rem;
     min-width: auto;
 }
 
 .logo{
     display: flex;
-    margin-left: 50px;
+    margin-left: 3.125rem;
     color: #c76565;
-    margin: 10px;
-    margin-right: 10px;
+    margin: .625rem;
+    margin-right: .625rem;
     align-items: center ;
 }
 
@@ -55,7 +57,7 @@ header{
 }
 
 .logo h1{
-    font-size: 30px;
+    font-size: 1.875rem;
     text-decoration: none;
 }
 
@@ -64,22 +66,22 @@ header{
 }
 
 .logo img{
-    height:  50px;
+    height:  3.125rem;
     border-radius: 50%;
-    margin-right: 10px;
+    margin-right: .625rem;
 }
 
 .nav{
     display: flex;
-    padding: 15px;
+    padding: .9375rem;
     align-items: center;
 }
 
 .nav a{
     color: #020101;
-    padding: 10px;
+    padding: .625rem;
     text-decoration: none;
-    font-size: 20px;
+    font-size: 1.25rem;
 }
 
 .nav a:hover{
@@ -93,30 +95,38 @@ header{
 
 .nav .sesion{
     color: white;
-    background-color: blueviolet;
-    border-radius: 15px;
+    background-color: rgb(138, 43, 226);
+    border-radius: .9375rem;
 }
 
 .nav .sesion:hover{
     transition: ease-in .2s;
     color: rgb(19, 11, 11);
-    background-color: rgb(186, 143, 226);
+    background-color: rgb(148, 86, 149);
 }
 
 .nav .sesion :hover {
     transform: scale(1.1);
 }
 
-@media(max-width:700px){
+/* RESPONSIVE */
+
+@media(max-width: 50rem){
     header{
-        flex-direction: column;
+        flex-direction: column; 
     }
 }
-@media(max-width:550px){
+@media(max-width:34.375rem){
     .nav{
         flex-direction: column;
+        margin-top: -2.1875rem;
+    }
+    h2, h4{
+        text-align: center;
     }
 }
+
+/* TITULOS DE LA PÁGINA */
 
 .tituloproductos{
     display: grid;
@@ -124,54 +134,116 @@ header{
 }
 
 .tituloproductos .hdos{
-    margin-top: 25px;
+    margin-top: 1.5625rem;
 }
 
 .tituloproductos .segundohdos{
-    margin-top: -15px;
+    margin-top: -0.9375rem;
 }
 
 .tituloproductos h2{
-    font-size: 40px;
+    font-size: 2.5rem;
 }
 
 .tituloproductos h4{
-    margin-top: -10px;
+    margin-top: -0.625rem;
     color: rgb(194, 62, 83);
-    font-size: 25px;
+    font-size: 1.5625rem;
 }
+
+/* en este espacio comineza el css de las tarjetas */
 
 .cards{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-around;
-    gap: 30px;
+    justify-content: center;
+    gap: 1.875rem;
+    padding-right: 5%;
+    padding-left: 5%;
+    text-align: center;
+    margin-top: 2%;
+    margin-bottom: 4%;
 }
 
 
 .cards .tarjetas{
-    background-color: rgb(177, 139, 212);
+    background-color: rgba(255, 255, 255, 0.808);
     width: 100%;
     max-width: 300px;
     height: auto;
-    border: 2px dashed rgb(122, 89, 89);
-    border-radius: 25px;
-    box-shadow: 7px 7px 10px rgb(221, 58, 58);
-    padding: 10px;
-    overflow: auto;
+    border-radius: 1.25rem;
+    box-shadow: .0625rem .0625rem .3125rem 5PX rgb(207, 205, 205);
 }
 
 .cards .tarjetas .contenido img{
-    width: 50%;
-    margin: auto;
-    display: block;
+    width: 80%;
+    margin-top: .9375rem;
+}
+.cards a{
+    text-decoration: none;
+    transition: background 0.2s linear;
 }
 
+.nombretorta{
+    color: #020101;
+    font-size: 1.875rem;
+    margin-left: 7%;
+    margin-right: 7%;
+}
 
+.precio{
+    color: rgb(221, 63, 90);
+    font-size: 1.25rem;
+    margin-top: -0.3125rem;
+}
 
+.porciones{
+    color: rgb(0, 0, 0);
+    margin-top: -15px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.cards a:hover{
+    background: rgb(226, 221, 221);
+    transition: background 2s linear;
+}
 
 footer{
     background-color: rgb(43, 43,43);
 }
+
+.logofooter{
+    display: flex;
+    align-items: center;
+    min-height: 3.75rem;
+    min-width: auto;
+    text-decoration: none;
+    margin-left: 150px;
+}
+
+.logofooter img{
+    width: 50px;
+}
+
+.logofooter h1{
+    font-size: 1.875rem;
+    color: rgb(194, 62, 83);
+}
+
+.siguenos{
+    display: flex;
+    flex-direction: row;
+    min-height: 3.75rem;
+    min-width: auto;
+}
+
+.siguenos img{
+    width: 50px
+}
+
+.contactanos img {
+    width: 50px;
+}
+
 
